@@ -12,6 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://unpkg.com/scrollreveal@4"></script>
 
     <title>WeTech</title>
   </head>
@@ -21,9 +22,9 @@
   <div
       class="min-h-screen px-6 py-3 flex flex-col gap-10 md:px-10 lg:px-16 lg:py-7"
     >
-      <header class="flex justify-between mt-4">
+      <header id="navbar" class="flex justify-between mt-4 bg-indigo-950  w-full h-16 sticky top-0 z-50 transition-all duration-300">
         <a href="" class="flex items-center">
-          <h1 class="text-3xl font-bold">Barika</h1>
+          <h1 class="text-3xl font-bold sticky top-0">WeTech</h1>
         </a>
 
         <ul
@@ -32,7 +33,7 @@
           <li><a href="#" class="min-[900px]:hover:text-sky-400">Home</a></li>
           <li><a href="#" class="min-[900px]:hover:text-sky-400">About</a></li>
           <li><a href="#" class="min-[900px]:hover:text-sky-400">Skills</a></li>
-          <li><a href="#" class="bg-sky-500 hover:bg-sky-700 px-2 py-1 font-medium rounded-md">Contact</a></li>
+          <li><a href="#" class="min-[900px]:hover:text-sky-400">Contact</a></li>
         </ul>
 
        
@@ -44,41 +45,63 @@
       <main class="min-[900px]:flex min-[900px]:gap-16">
 
         <div
-          class="flex items-center justify-center min-[900px]:flex-1 min-[900px]:order-2 min-[900px]:justify-end"
+          class="flex items-center justify-center min-[900px]:flex-1 min-[900px]:order-2 min-[900px]:justify-end image-transform"
         >
           <img
-            src="./assets/img/Passport22 .png"
+            src="./assets/img/office.jpg"
             alt="Work from anywhere"
-            class="outline outline-white shadow-2xl shadow-black min-[900px]:h-[550px] min-[900px]:w-[370px] xl:h-[600px] xl:w-[600px] lg:rounded-2x1 rounded-2xl"
+            class="outline outline-indigo-700 shadow-2xl shadow-black min-[900px]:h-[550px] min-[900px]:w-[370px] xl:h-[600px] xl:w-[600px] lg:rounded-2x1 rounded-2xl"
           />
         </div>
 
         <div
           class="space-y-6 mt-16 min-[900px]:flex-1 min-[900px]:order-1 lg:mt-32"
         >
-          <div class="text-5xl font-bold leading-tight whitespace-nowrap">
+          <div class="text-5xl font-bold leading-tight whitespace-nowrap text-transform">
             <h2>Hello, I'm</h2>
-            <h2 class="text-6xl font-bold text-sky-400 text-[5rem]">Barika</h2>
+            <h2 class="text-6xl font-bold text-sky-400 text-[5rem]">WeTech</h2>
           </div>
-          <p class="text-2xl text-white-900">
-            Barika Technology is a commercial tech agency focused on building
-            digital products and providing IT services to businesses. Their core
-            services include: Building modern, responsive websites. Mobile App
+          <p class="text-2xl text-white-900 leading-10 second-text-transform">
+            WeTech Technology is a commercial tech agency focused on building
+            digital products and providing IT services to businesses. Our core services include: Building modern, responsive websites. Mobile App
             Development: Creating user-focused applications for iOS and Android.
             Digital Solutions: Helping businesses adapt, improve efficiency, and
             scale using digital tools.
           </p>
 
-          <button class="bg-sky-500 hover:bg-sky-700 px-8 py-4 font-medium rounded-md">
-            Contact Me
-          </button>
+          <a 
+  href="https://wa.me/+12136008542" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  class="bg-sky-500 hover:bg-sky-700 px-8 py-4 font-medium rounded-md mt-6 mb-16 inline-block text-white"
+>
+  Contact Me
+</a>
 
           
-  <div class="w-full bg-sky-950 text-slate-950 pt-20 pb-12 px-8 rounded-t-[50%_30px] md:rounded-t-[50%_60px] text-center">
-    <h2 class="text-sm font-bold whitespace-nowrap text-white">&copy; 2023 Barika Tech. All rights reserved.</h2>
+
+          
+
+  </main>
+
+  <footer class="bg-indigo-950 border-t border-gray-700">
+  <div class="mx-auto max-w-7xl px-6 py-8 flex flex-col items-center justify-between gap-4 sm:flex-row">
+    <!-- Brand Logo / Name -->
+    <div class="flex items-center space-x-2">
+      <span class="text-lg font-semibold text-gray-400 tracking-tight">WeTech</span>
+    </div>
+    
+    <!-- Flat Inline Links -->
+    <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-gray-400">
+      <a href="#" class="hover:text-sky-500">About</a>
+      <a href="#" class="hover:text-sky-500">Skill</a>
+      <!-- <a href="#" class="hover:text-sky-500">Careers</a> -->
+      <a href="#" class="hover:text-sky-500">Contact</a>
+    </div>
+    <!-- Copyright -->
+    <p class="text-xs text-gray-400 sm:order-first">&copy; 2026 WeTech. Your Digital Solutions.</p>
   </div>
-
-      </main>
-
+</footer>
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
